@@ -1,0 +1,386 @@
+.main-class {
+	background-color: white;
+	height: 3000px;
+	margin: auto;
+	width: 1300px;
+}
+
+.main-wrapper {
+	display: -webkit-box;
+	left: 70px;
+	margin-bottom: 1px;
+	position: relative;
+}
+
+.header_section {
+	position: absolute;
+	left: 400px;
+}
+
+ul {
+	margin-top: -65px;
+}
+
+nav {
+	margin-left: 40px;
+}
+
+li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.shadow-img {
+	border: 1px;
+	box-shadow: 0 8px 6px -6px;
+	height: 70px;
+}
+
+.search-icon {
+	bottom: 37px;
+	left: 1150px;
+	position: relative;
+}
+
+.class-trend {
+	background-color: red;
+	color: white;
+	padding: 5px;
+	margin: 20px;
+}
+
+.trend-bottom {
+	display: flex;
+	position: relative;
+	top: -105px;
+}
+
+.manage-img {
+	margin-right: 30px;
+}
+
+.inside-img {
+	background-color: #FFFFE0;
+	border-radius: 8px;
+	font-size: xx-small;
+	left: 45px;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	top: -165px;
+}
+
+.bottom {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	display: inline-block;
+	font-size: x-large;
+	height: 82px;
+	left: 60px;
+	position: relative;
+	top: -120px;
+}
+
+.right-img {
+	background-color: #FBE1E3;
+	bottom: 78px;
+	font-size: small;
+	padding: 10px;
+	position: relative;
+	margin: 20px;
+	right: 8px;
+}
+
+.context {
+	bottom: 70px;
+	font-size: large;
+	left: 155px;
+	position: relative;
+}
+
+.manage-hr {
+	border-top: 2px #8c8b8b;
+	position: relative;
+	top: -60px;
+	width: 380px;
+}
+
+.right-img1 {
+	background-color: #AFEEEE;
+	bottom: 78px;
+	font-size: small;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	right: 8px;
+}
+
+.right-img2 {
+	background-color: #F5F5D6;
+	bottom: 78px;
+	font-size: small;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	right: 8px;
+}
+
+.right-img3 {
+	background-color: #FFFFE0;
+	bottom: 78px;
+	font-size: small;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	right: 8px;
+	margin: 20px;
+}
+
+.lifestyle {
+	background-color: #FBE1E3;
+	font-size: small;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	right: 20px;
+	top: 30px;
+}
+
+.Model {
+	font-size: large;
+	position: relative;
+	top: 40px;
+}
+
+.sports {
+	background-color: #F5F5D6;
+	font-size: small;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	right: 20px;
+	top: 30px;
+}
+
+.sport-class {
+	font-size: large;
+	position: relative;
+	top: 55px;
+}
+
+.travels {
+	background-color: #AFEEEE;
+	font-size: small;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	right: 20px;
+	top: 30px;
+}
+
+.travels-class {
+	font-size: large;
+	position: relative;
+	top: 40px;
+}
+
+.manage-hr1 {
+	border-top: 2px #8c8b8b;
+	position: relative;
+	top: -42px;
+}
+
+.manage-row {
+	border-top: 2px #8c8b8b;
+	position: relative;
+}
+
+.strike-model {
+	background-color: white;
+	border-radius: 8px;
+	bottom: 250px;
+	height: 103px;
+	left: 40px;
+	padding: 35px;
+	padding-left: 20px;
+	padding-right: px;
+	padding-top: 60px;
+	position: relative;
+	width: 250px;
+}
+
+.best-model {
+	font-size: large;
+	position: relative;
+	top: 17px;
+}
+
+.strike-img {
+	background-color: #FBE1E3;
+	font-size: small;
+	margin: 1px;
+	padding: 10px;
+	position: relative;
+	right: 1px;
+}
+
+.manage-hr2 {
+	border-top: 2px #8c8b8b;
+	top: -140px;
+	position: relative;
+}
+
+.manage-navbar {
+	background-color: #77777a12;
+	bottom: 56px;
+	border: 1px;
+	color: slategray;
+	height: 70px;
+	left: 317px;
+	padding: 1px;
+	position: relative;
+	width: 450px;
+}
+
+.li-manage {
+	color: red;
+	left: -70px;
+	margin-right: -55px;
+	position: relative;
+}
+
+.li-manage1 {
+	color: slategray;
+	margin-left: 20px;
+}
+
+.night-model {
+	bottom: 100px;
+	background-color: white;
+	padding-left: 20px;
+	padding-right: px;
+	padding-top: 60px;
+	position: relative;
+	width: 270px;
+}
+
+.party-img {
+	background-color: #FBE1E3;
+	bottom: 22px;
+	font-size: small;
+	left: -20px;
+	margin: 1px;
+	padding: 10px;
+	position: relative;
+}
+
+.party-model {
+	font-size: large;
+	left: -20px;
+	position: relative;
+}
+
+.contact-us {
+	left: 90px;
+	margin-top: -99px;
+	position: relative;
+}
+
+.fb-border {
+	border-style: ridge;
+	left: 30px;
+	height: 70px;
+	position: relative;
+	top: 25px;
+	width: 240px;
+}
+
+.fb-manager {
+	bottom: 40px;
+	left: 25px;
+	margin-left: 25px;
+	position: relative;
+}
+
+.rating {
+	bottom: 70px;
+	font-size: larger;
+	left: 40px;
+	position: relative;
+}
+
+.fan-class {
+	color: #696969;
+	bottom: 47px;
+	font-size: unset;
+	position: relative;
+	text-shadow: px 4px 4px;
+}
+
+.fb-border1 {
+	border-style: ridge;
+	left: 30px;
+	height: 70px;
+	margin-left: 25px;
+	position: relative;
+	top: 25px;
+	width: 240px;
+}
+
+.fb-manager1 {
+	bottom: 40px;
+	left: 75px;
+	position: relative;
+}
+
+.rating1 {
+	bottom: 70px;
+	font-size: larger;
+	left: 80px;
+	position: relative;
+}
+
+.fan-class1 {
+	bottom: 47px;
+	color: #696969;
+	font-size: unset;
+	left: 35px;
+	position: relative;
+	text-shadow: px 4px 4px;
+}
+
+.manage-div {
+	bottom: 50px;
+	display: flex;
+	position: relative;
+}
+
+.news-card {
+	bottom: 308px;
+	left: 100px;
+	position: relative;
+}
+
+.dot-class {
+	background-color: #bbb;
+	bottom: 35px;
+	border-radius: 70%;
+	float: right;
+	height: 9px;
+	margin-left: 10px;
+	position: relative;
+	right: 20px;
+	width: 9px;
+}
+
+.dot-class1 {
+	background-color: red;
+	bottom: 35px;
+	border-radius: 8px;
+	float: right;
+	margin-left: 12px;
+	padding: 5px;
+	position: relative;
+	right: 22px;
+	width: 36px;
+}
