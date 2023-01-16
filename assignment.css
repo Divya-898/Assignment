@@ -1,0 +1,635 @@
+.main-class {
+	background-color: white;
+}
+
+.trending-class {
+	width: 800px;
+}
+
+.main-wrapper {
+	display: -webkit-box;
+	margin-bottom: 1px;
+	position: relative;
+}
+
+.header_section {
+	position: absolute;
+	left: 400px;
+}
+
+.shadow-img {
+	border: 0px;
+	box-shadow: 0 3px 6px -6px;
+	height: 13px;
+}
+
+.class-trend {
+	background-color: red;
+	border-radius: 4px;
+	color: white;
+	padding: 8px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.trend-bottom {
+	position: relative;
+}
+
+.manage-img {
+	margin-right: 30px;
+}
+
+.inside-img {
+	background-color: #F0E68C;
+	border-radius: 8px;
+	font-size: smaller;
+	margin: 4px;
+	padding: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	position: relative;
+	top: -125px;
+}
+
+.bottom {
+	position: relative;
+	top: -90px;
+	left: 5px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	display: inline-block;
+  font-size: larger;
+	height: 55px;
+}
+
+.right-img {
+	background-color: #FBE1E3;
+	bottom: 58px;
+	font-size: small;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	right: 8px;
+}
+
+.context {
+	bottom: 70px;
+	font-size: large;
+	left: 155px;
+	position: relative;
+}
+
+.manage-hr {
+	bottom: 40px;
+	border-top: 2px #8c8b8b;
+	position: relative;
+}
+
+.right-img1 {
+	background-color: #AFEEEE;
+	bottom: 58px;
+	font-size: small;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	right: 8px;
+}
+
+.right-img2 {
+	background-color: #F5F5D6;
+	bottom: 58px;
+	font-size: small;
+	margin: 20px;
+	position: relative;
+	padding: 10px;
+	right: 8px;
+}
+
+.right-img3 {
+	background-color: #FFFFE0;
+	bottom: 58px;
+	font-size: small;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	right: 8px;
+}
+
+.lifestyle {
+	background-color: #FBE1E3;
+	font-size: small;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px;
+	right: 20px;
+	top: 30px;
+}
+
+.Model {
+	font-size: medium;
+	margin-top: -20px;
+}
+
+.sports {
+	background-color: #F5F5D6;
+	font-size: small;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.winner-context {
+	margin-top: -40px
+}
+
+.sport-class {
+	font-size: large;
+	position: relative;
+	top: 55px;
+}
+
+.travels {
+	background-color: #AFEEEE;
+	font-size: small;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.travels-class {
+	font-size: large;
+	position: relative;
+	top: 40px;
+}
+
+.manage-hr1 {
+	border-top: 2px #8c8b8b;
+	position: relative;
+	top: -40px;
+}
+
+.manage-row {
+	margin-top: -2%
+}
+
+.best-model {
+	font-size: large;
+	position: relative;
+	top: 17px;
+}
+
+.manage-hr2 {
+	border-top: 2px #8c8b8b;
+	position: relative;
+	top: -140px;
+}
+
+.manage-navbar {
+	background-color: #77777a12;
+	border: 1px;
+	position: relative;
+	height: 63px;
+	padding: 1px;
+	width: 350px;
+}
+
+.li-manage {
+	color: red;
+	display: inline-block;
+	left: -10px;
+	position: relative;
+}
+
+.li-manage1 {
+	margin-left: 15px;
+}
+
+.li-manage2 {
+	margin-left: 15px;
+}
+
+.li-manage3 {
+	margin-left: -47%;
+	position: relative;
+	top: 30px;
+}
+
+.night-model {
+	background-color: white;
+	bottom: 80px;
+	height: 40px;
+	left: -10px;
+	padding-left: 30px;
+	padding-top: 60px;
+	position: relative;
+	width: 270px;
+}
+
+.party-img {
+	background-color: #FBE1E3;
+	bottom: 35px;
+	font-size: small;
+	left: -20px;
+	margin: 1px;
+	padding: 10px;
+	padding-left: 12px;
+	position: relative;
+}
+
+.party-model {
+	bottom: 20px;
+	font-size: medium;
+	left: -20px;
+	position: relative;
+}
+
+.contact-us {
+	margin-top: -3%;
+	position: relative;
+}
+
+.fb-border {
+	border-style: ridge;
+	left: 1.5px;
+	height: 70px;
+	position: relative;
+	width: 168px;
+}
+
+.fb-manager {
+	bottom: 68px;
+	margin-left: 15px;
+	position: relative;
+}
+
+.rating {
+	bottom: 95px;
+	font-size: larger;
+	left: 5px;
+	position: relative;
+}
+
+.fan-class {
+	bottom: 75px;
+	color: #696969;
+	font-size: unset;
+	position: relative;
+	right: 35px;
+	text-shadow: px 4px 4px;
+}
+
+.fb-border1 {
+	border-style: ridge;
+	height: 70px;
+	margin-left: 25px;
+	position: relative;
+	right: 10px;
+	width: 168px;
+}
+
+.fb-manager1 {
+	bottom: 68px;
+	margin-left: 30px;
+	position: relative;
+}
+
+.rating1 {
+	bottom: 95px;
+	font-size: larger;
+	left: 35px;
+	position: relative;
+}
+
+.fan-class1 {
+	bottom: 75px;
+	color: #696969;
+	font-size: unset;
+	position: relative;
+	right: 8px;
+	text-shadow: px 4px 4px;
+}
+
+.dot-class {
+	background-color: #bbb;
+	bottom: 35px;
+	border-radius: 70%;
+	float: right;
+	height: 9px;
+	margin-left: 10px;
+	position: relative;
+	right: 69%;
+	width: 9px;
+}
+
+.dot-class1 {
+	background-color: red;
+	bottom: 35px;
+	border-radius: 8px;
+	float: right;
+	margin-left: 12px;
+	padding: 5px;
+	position: relative;
+	right: 20px;
+	right: 69%;
+	width: 36px;
+}
+
+@media ( max-width : 400px) {
+	.main-class {
+		padding: 2.5%;
+		width: 300%;
+	}
+	.trending-class {
+		margin-top: 10px;
+		width: 31.5%;
+	}
+	.trend-bottom {
+		bottom: 80px;
+		position: relative;
+	}
+	.manage-img {
+		margin-right: 30px;
+		height: "230px";
+		width: 31.5%;
+	}
+	.manage-img1 {
+		height: 230px;
+		margin-top: 20px;
+		width: 31.5%;
+	}
+	.Model {
+		font-size: medium;
+		margin-top: 20px;
+	}
+	.context {
+		bottom: 56px;
+		font-size: small;
+		left: 110px;
+		position: relative;
+	}
+	.context1 {
+		bottom: 56px;
+		font-size: small;
+		left: 110px;
+		position: relative;
+	}
+	.manage-hr2 {
+		border-top: 2px #8c8b8b;
+		position: relative;
+		top: 30px;
+	}
+	ul {
+		display: inline-flex;
+	}
+	li {
+		display: inline-block;
+	}
+	nav {
+		margin-top: -8px;
+	}
+	.whatnews-class {
+		height: 300px;
+		margin-top: 2%;
+		width: 31.5%;
+	}
+	.sea-class {
+		margin-top: -3%;
+	}
+	.whatnews2-class {
+		height: 400px;
+		margin-top: -3.3%;
+		width: 31.5%;
+	}
+	.weekly-class {
+		margin-left: 15px;
+		width: 170px;
+	}
+	.weekly-class1 {
+		margin-left: -80px;
+		width: 170px;
+	}
+	.display-img {
+		display: flex;
+	}
+	.corporate-img {
+		background-color: #FBE1E3;
+		bottom: 12px;
+		font-size: small;
+		padding: 10px;
+		position: relative;
+		right: 61.4%;
+	}
+	.corporate-img1 {
+		background-color: #FBE1E3;
+		bottom: 12px;
+		font-size: small;
+		padding: 10px;
+		position: relative;
+		right: 92.1%;
+	}
+	.news-color {
+		background-color: aliceblue;
+		margin-left: -17px;
+		padding-bottom: 5%;
+		padding-top: 25px;
+		position: relative;
+	}
+	.dot-class2 {
+		background-color: #bbb;
+		bottom: 33px;
+		border-radius: 70%;
+		float: right;
+		height: 5px;
+		margin-left: 10px;
+		position: relative;
+		right: 68%;
+		width: 5px;
+	}
+	.dot-class3 {
+		background-color: red;
+		bottom: 33px;
+		border-radius: 8px;
+		float: right;
+		margin-left: 12px;
+		padding: 3px;
+		position: relative;
+		right: 68%;
+		width: 20px;
+	}
+	.date-class {
+		bottom: 10px;
+		color: darkgray;
+		margin-left: 10px;
+		position: relative;
+	}
+	.date-model {
+		bottom: 22px;
+		font-size: medium;
+		left: 10px;
+		position: relative;
+	}
+	.date-class1 {
+		bottom: 10px;
+		color: darkgray;
+		position: relative;
+		right: 80px;
+	}
+	.date-model1 {
+		bottom: 22px;
+		font-size: medium;
+		position: relative;
+		right: 80px;
+	}
+	.dot-header {
+		background-color: red;
+		float: right;
+		left: 100%;
+		margin-left: 25px;
+		padding: 1.5px;
+		position: relative;
+		right: 20px;
+		top: 59%;
+		width: 20px;
+	}
+	.dot-header1 {
+		background-color: red;
+		float: right;
+		left: 151%;
+		padding: 1.5px;
+		position: relative;
+		top: 66%;
+		width: 20px;
+	}
+	.dot-header2 {
+		background-color: red;
+		float: right;
+		left: 176%;
+		padding: 1.5px;
+		position: relative;
+		top: 74%;
+		width: 20px;
+	}
+	.main-wrapper {
+		display: -webkit-box;
+		margin-bottom: 1px;
+		position: relative;
+	}
+	.fb-border {
+		border-style: ridge;
+		left: 1.5px;
+		height: 70px;
+		position: relative;
+		width: 168px;
+	}
+	.fb-manager {
+		bottom: 68px;
+		margin-left: 15px;
+		position: relative;
+	}
+	.rating {
+		bottom: 95px;
+		font-size: larger;
+		left: 5px;
+		position: relative;
+	}
+	.fan-class {
+		bottom: 75px;
+		color: #696969;
+		font-size: unset;
+		position: relative;
+		right: 35px;
+		text-shadow: px 4px 4px;
+	}
+	.fb-border1 {
+		border-style: ridge;
+		height: 70px;
+		margin-left: 25px;
+		position: relative;
+		right: 10px;
+		width: 168px;
+	}
+	.fb-manager1 {
+		bottom: 68px;
+		margin-left: 30px;
+		position: relative;
+	}
+	.rating1 {
+		bottom: 95px;
+		font-size: larger;
+		left: 35px;
+		position: relative;
+	}
+	.fan-class1 {
+		bottom: 75px;
+		color: #696969;
+		font-size: unset;
+		position: relative;
+		right: 8px;
+		text-shadow: px 4px 4px;
+	}
+	.bottom {
+		background-color: rgba(0, 0, 0, 0.3);
+		color: white;
+		display: inline-block;
+		font-size: larger;
+		height: 55px;
+		left: 5px;
+		position: relative;
+		top: -90px;
+	}
+	.dot-class {
+		background-color: #bbb;
+		bottom: 35px;
+		border-radius: 70%;
+		float: right;
+		height: 9px;
+		margin-left: 10px;
+		position: relative;
+		right: 69%;
+		width: 9px;
+	}
+	.dot-class1 {
+		background-color: red;
+		bottom: 35px;
+		border-radius: 8px;
+		float: right;
+		margin-left: 12px;
+		position: relative;
+		padding: 5px;
+		right: 20px;
+		right: 69%;
+		width: 36px;
+	}
+	.week-img {
+		height: 350px;
+		width: 352px;
+	}
+	right-img1 {
+		position: relative;
+		background-color: #AFEEEE;
+		bottom: 58px;
+		padding: 10px;
+		margin: 20px;
+		right: 8px;
+		font-size: small;
+	}
+	.right-img2 {
+		background-color: #F5F5D6;
+		bottom: 58px;
+		font-size: small;
+		margin: 20px;
+		position: relative;
+		padding: 10px;
+		right: 8px;
+	}
+	.right-img3 {
+		background-color: #FFFFE0;
+		bottom: 58px;
+		font-size: small;
+		margin: 20px;
+		padding: 10px;
+		position: relative;
+		right: 8px;
+	}
+}
