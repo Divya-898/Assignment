@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<link rel="stylesheet" href="build/css/intlTelInput.css">
+</head>
+<body>
+	<form name="form1" id="myform" method="POST">
+		<div class="container manage-contain">
+			<span class="manage-text">Your Face</span>
+			<div class="container manage-color">
+				<span class="sp">image preview : <img id="output" src="user.png" alt="preview"><img src="" id="ouput1"></span>
+				 <span class="contain-img required-field">your image :</span> <input id="input-id" name="photo" type="file" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])" required>
+			</div>
+		</div>
+		<div class="container mt-4 general-details">
+			<span class="manage-text">Your General Details</span>
+			<div class="container manage-name">
+				<!-- <span class="contain-name">Name :<span class="profile-info">*</span><input type="text" id="name"
+					maxlength="30" 
+					onclick="validatenamevalue();"
+					required /></span>-->
+				<div class="contain-name">
+					<span>Name :<span class="profile-info">*</span></span>
+					<input type="text" onkeyup="validateName()" id="contact-name" required />
+					<span id="name-error"></span>
+				</div>
+                <br> <br> <span id="span-gender"><input type="button" value="Gender:" id="span-btn"> 
+					<span class="profile-info">*</span><label><input type="radio" name="gender" value="male">Male</label>
+					<label><input type="radio" name="gender" value="female">Female</label> </span><br>
+				<br>
+				<div class="post-age">
+					<label for="field" class="contain-age">Age:<span class="profile-info">*</span></label> <input type="text" class="left" id="field" name="field"><br>
+				</div>
+				<div class="post-age mt-2">
+					<label for="head">Favourite color :</label> <input type="color" id="head" name="head" value="#e66465">
+				</div>
+                <span class="post-age"> <label for="birthdate">Date of birth:</label><span class="profile-info">*</span>
+				<input type="date" id="birthdate" name="birthdate" required />
+				<button id="check" hidden required></button>
+				<br> <br>
+				<div class="post-age">
+					<span>Which country :<span class="profile-info">*</span><select id="counrty" required >
+				    </select></span> state:<select id="state" required>
+						<option value="0">--select--</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-4 indicate-profile">
+			<span class="manage-text">Your Indicators</span>
+			<div class="inner-wrapper">
+				<p class="post-age mt-4">
+					<label for="range_weight">Height: </label> <span class="slider_label1">5</span> <input type="range" min="150" max="170" step="2" value="150" oninput="showheight(this.value)" required /> 
+					<span id="slider_label">150</span>
+				</p>
+                <div class="salary-slide">
+					<div class="slider">
+						<p>Salary</p>
+						<div class="range-slider">
+							<span class="rangeValues"></span> <input value="10000" min="10000" max="50000" step="500"
+								type="range" name="username" required /> <input value="50000" min="10000" max="61000"
+								step="5000" type="range" name="username" required /> <span class="rangeValues1"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-4 contact-info">
+			<span class="manage-text">Your Contact Information</span>
+			<div class="inner-info">
+				<label for="field1" class="post-age mt-4">Email :<span class="profile-info">*</span> </label> 
+				<input class="left" id="field1" name="field1"> <br />
+				 <label for="phone" class="post-age mt-4">Mobile:<span class="profile-info">*</span></label> 
+				 <input id="phone" name="phone" type="tel" required /><br>
+				<div class="post-age mt-3">
+					<span class="post-address">Address:</span><br> 
+					<span class="post-age"><textarea rows="4" cols="50" name="comment" form="usrform" class="address-info"></textarea></span>
+				</div>
+				<div style="display: flex">
+					<div class="post-age">Method to contact you :<span class="profile-info">*</span> 
+						<input type="checkbox" id="scales" name="scales" checked> <label for="scales">Email</label>
+					</div>
+					<div>
+						<input type="checkbox" id="horns" name="horns"> <label for="horns">Whatsapp</label>
+					</div>
+					<div>
+						<input type="checkbox" id="horns" name="horns"> <label for="horns">In-app chat</label>
+					</div>
+               </div>
+			</div>
+		</div>
+		<div id="manage-footer">
+			<input type="submit" value="Submit">
+		</div>
+	</form>
+	<script src="build/js/intlTelInput.js"></script>
+	<script src="script.js"></script>
+	<script type="test/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</body>
+</html>

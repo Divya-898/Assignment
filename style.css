@@ -1,0 +1,227 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	margin: 5px;
+	padding: 0px;
+}
+
+#output {
+	border: none;
+	height: 50px;
+	top: -15px;
+	position: absolute;
+}
+
+#name-error{
+	color:red;
+}
+
+/*.sp img{
+	display:none;
+}*/
+
+#input-id {
+	margin-left: 20px;
+	position: absolute;
+	top: 80px;
+}
+
+.sp {
+	left: 120px;
+	position: relative;
+	top: 100px;
+}
+
+.manage-contain {
+	background: yellow;
+	height: 190px;
+}
+
+.general-details {
+	background: yellow;
+	height: 380px;
+}
+
+.manage-name {
+	background: #FFFFCC;
+	height: 350px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: -5px;
+	padding-top: 10px;
+	position: relative;
+}
+
+.manage-color {
+	background: #FFFFCC;
+	height: 150px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.required-field::after {
+	content: "*";
+	color: red;
+	margin-left: -10px;
+	position: relative;
+}
+
+.contain-img {
+	position: relative;
+	top: 40px;
+}
+
+.contain-name {
+	left: 110px;
+	position: absolute;
+	top: 30px;
+}
+
+.manage-text {
+	margin-left: 50px;
+}
+
+#span-btn {
+	background: #FFFFCC;
+	border: 0;
+}
+
+#span-gender {
+	left: 62px;
+	margin-left: 40px;
+	position: relative;
+	top: 20px;
+}
+
+.contain-age {
+	margin-left: 20px;
+}
+
+.post-age {
+	margin-left: 40px;
+	padding-left: 40px;
+}
+
+.indicate-profile {
+	background: yellow;
+	height: 190px;
+}
+
+.inner-wrapper {
+	background: #FFFFCC;
+	height: 160px;
+	padding-top: 10px;
+	position: relative;
+	margin-top: -5px;
+}
+
+.salary-slide .slider {
+	margin-left: 40px;
+	padding-left: 40px;
+	position: relative;
+}
+
+.salary-slide .range-slider {
+	margin-left: 40px;
+	padding-left: 40px;
+	position: relative;
+	text-align: center;
+	top: -40px;
+	width: 300px;
+}
+
+.salary-slide .range-slider .rangeValues {
+	box-shadow: 0 0 20px rgb(0 139 253/ 25%);
+	font-size: 15px;
+	display: block;
+	float: left;
+	margin-bottom: 35px; margin : -10px -20px;
+	padding: 5px;
+	margin: -10px -20px;
+}
+
+.salary-slide .range-slider .rangeValues1 {
+	box-shadow: 0 0 20px rgb(0 139 253/ 25%);
+	font-size: 15px; float : right; margin : -10px 10px;
+	padding: 5px;
+	float: right;
+	margin: -10px 10px;
+}
+
+.salary-slide input[type=range] {
+	border: 1px solid white;
+	left: 30%;
+	position: absolute;
+	width: 130px;
+	-webkit-appearance: none;
+}
+
+.salary-slide input[type=range]::-webkit-slider-runnable-track {
+	background: #ddd;
+	border: none;
+	border-radius: 3px;
+	height: 5px;
+	width: 300px;
+}
+
+#birthdate{
+	color:black;
+}
+
+#field1{
+	color:black;
+}
+
+
+.error{
+	color:red;
+}
+.profile-info{color: red;
+    margin-left: -9px;
+}
+
+
+.salary-slide input[type=range]::-webkit-slider-thumb {
+	background: #21c1ff;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 18px;
+	margin-top: -6px;
+	position: relative;
+	-webkit-appearance: none;
+	width: 18px;
+	z-index: 1;
+}
+
+.contact-info {
+	background: yellow;
+	height: 280px;
+}
+
+.inner-info {
+	background: #FFFFCC;
+	height: 250px;
+	margin-top: -5px;
+	padding-top: 10px;
+	position: relative;
+}
+
+textarea {
+	height: 50px;
+	margin: 20px 40px;
+}
+
+.post-address {
+	margin-top: -40px;
+}
+
+.address-info {
+	margin-top: -20px;
+}
+
+#manage-footer{
+	 margin-left:40px;
+	 padding-left:40px;
+	
+}
