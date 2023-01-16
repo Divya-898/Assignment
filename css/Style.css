@@ -1,0 +1,42 @@
+/*id
+/*#para{
+	
+	text-align: center;
+  background-color: red;
+}
+#div1{
+  text-align: center;
+  background-color: aqua;
+}*/
+
+
+/*class
+.para{
+background-color: aqua;	
+}
+*/
+/* element
+p{
+	
+	 background-color: aqua;
+}
+div{
+	background-color: red;
+	
+	
+}*/
+
+/* grouping selector
+p,div{
+	background-color: red;
+}*/
+/*Position property
+h2{
+	background-color :blue;
+	padding :30px;
+	border : 5px solid red;
+	margin : 50px
+}*/
+p.dotted {outline-style: dotted;
+           outline-color:red;
+           }

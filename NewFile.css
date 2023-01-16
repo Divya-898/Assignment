@@ -1,0 +1,186 @@
+body {
+	background-image: url("yellow_background.png");
+}
+
+#main-class {
+	margin: auto;
+	width: 916px;
+}
+
+h1, footer h1, nav a {
+	text-transform: uppercase;
+}
+
+#img-travel {
+	background-image: url("sanfrancisco.jpg");
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px #1c1a19;
+	height: 200px;
+	margin-bottom: 25px;
+	margin-top: 15px;
+	position: relative;
+}
+
+.bottom-right {
+	background-color: rgba(24, 24, 24, 0.8);
+	border-radius: 0px 0px 5px 5px;
+	bottom: 0;
+	color: white;
+	height: 50px;
+	padding-left: 10px;
+	position: absolute;
+	width: 98.9%;
+}
+
+.arrow-img {
+	background-image: url("red_background.png");
+	border-radius: 5px;
+	bottom: 9px;
+	color: white;
+	display: inline-block;
+	height: 25px;
+	padding: 4px 8px 0px 8px;
+	position: absolute;
+	right: 10px;
+	text-decoration: none;
+}
+
+.article img {
+	border: 0;
+	margin-left: 6px;
+	vertical-align: middle;
+}
+
+#main-tittle {
+	display: inline-block;
+}
+
+nav {
+	display: inline-block;
+	text-align: right;
+	width: 740px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.icon {
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+.outer-wrapper {
+	display: inline-flex;
+}
+
+.outer-banner {
+	color: grey;
+	left: 2.5px;
+	position: relative;
+	top: 100px;
+}
+
+.article-part {
+	margin-right: 15px;
+	width: 625px;
+}
+
+.author {
+	background-color: grey;
+	border-radius: 5px;
+	color: white;
+	height: 410px;
+	padding: 15px;
+	width: 235px;
+}
+
+.zozor-img {
+	background: black;
+	border: 1px solid black;
+	display: inline-block;
+	height: 116px;
+	margin-left: 40px;
+	width: 139px;
+}
+
+.column {
+	float: left;
+	margin-left: 1px;
+	padding: 2px;
+}
+
+.row {
+	clear: both;
+	content: "";
+	display: inline-block;
+	display: table;
+}
+
+footer h1 {
+	font-size: 1em;
+	margin-top: 4px;
+}
+
+.last-tweet {
+	display: flex;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.my-pictures {
+	margin-left: 40px
+}
+
+.top-arrow1 {
+	margin-bottom: -4px;
+	position: relative;
+	background-image: url("line.png");
+	height: 3px;
+	width: 100%;
+}
+
+.bottom-arrow {
+	position: absolute;
+	left: 350px;
+}
+
+.my-friend {
+	left: 80px;
+	position: relative;
+}
+
+.external_link {
+	display: flex;
+	margin-top: 5px
+}
+
+.external_link2 {
+	color: #8B0000;
+	font-size: 10px;
+}
+
+.manage-list {
+	margin-left: 60px;
+	position: relative;
+}
+
+.row-img {
+	background: black;
+	border: 1px solid black;
+	display: inline-block;
+	height: 69px;
+	margin-left: 1.3px;
+}
+
+.container-table {
+	background-image: url("line.png");
+	height: 3px;
+	width: 100%;
+}
