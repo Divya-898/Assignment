@@ -1,0 +1,152 @@
+.main-wrapper {
+	border-left: 12px solid black;
+	border-top: 13px solid black;
+	margin-left: 40px;
+	width: 1250px;
+}
+
+.contain-head {
+	margin-left: 6%;
+	padding-left: 40px;
+}
+
+.country-code {
+	margin-left: 40px;
+	padding-left: 40px;
+}
+
+.main-container {
+	height: 1290px;
+	width: 100%;
+}
+
+.last-wrapper {
+	border-right: 12px solid;
+	border-right-width: 12px;
+	border-bottom: 20px solid;
+	border-bottom-width: 13px;
+	bottom: 20px;
+	font-size: larger;
+	margin-left: 40px;
+	padding: 3px;
+	position: relative;
+	text-align: center;
+	width: 1250px;
+	font-size: larger;
+}
+
+address {
+	font-style: inherit;
+	margin-left: 20px;
+	padding-left: 40px;
+	position: relative;
+	top: 60px;
+}
+
+h2 {
+	color: black;
+	font-size: xx-large;
+	font-weight: inherit;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+img {
+	bottom: 30px;
+	height: 105px;
+	float: right;
+	margin-right: 40px;
+	padding-right: 40px;
+	position: relative;
+	right: 40px;
+}
+
+hr {
+	left: -30px;
+	margin-top: 40px;
+	position: relative;
+	top: 30px;
+	width: 1250px;
+}
+
+.middle-section {
+	left: 40px;
+	position: relative;
+	top: 30px;
+}
+
+.manage-invoice {
+	margin-left: 20px;
+}
+
+.contain-order {
+	text-align: center;
+	margin-top: -18px;
+	padding-right: 40px;
+	position: relative;
+	right: 40px;
+}
+
+.date-section {
+	margin-bottom: 10px;
+	position: inherit;
+	right: 15%;
+	text-align: end;
+	top: -31px;
+}
+
+.manage-hr {
+	position: relative;
+	top: -30px;
+}
+
+ul {
+	width: 90%;
+}
+
+li {
+	display: inline-block;
+	width: 19%;
+}
+
+.gst-details {
+	margin-left: -40px;
+}
+
+.billed-class {
+	margin-left: 40px;
+	padding-left: 20px;
+	position: relative;
+	top: -10px;
+}
+
+.manage-wallet {
+	margin-left: 40px;
+	text-align: center;
+	margin-top: -20px;
+	position: inherit;
+	left: 9%;
+	padding-left: 40px
+}
+
+.table-content {
+	margin-left: 40px;
+	padding-left: 20px;
+	width: 1250px;
+}
+
+.manage-border {
+	border-top: 1px solid;
+	border-top-width: thin;
+	left: 20px;
+	margin-left: 40px;
+	position: relative;
+	top: 40px;
+	width: 1250px;
+}
+
+.manage-div {
+	margin-left: 40px;
+	padding-left: 10px;
+	padding-bottom: 40px;
+}
