@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+</head>
+
+<body>
+  <div id="nav-title">
+    <div id="menu-list">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Myntra_Logo.png" alt="myntralogo" id="img">
+      <div class="main-menu">
+        <div class="nav-wrapper">
+          <div class="product-items"></div>
+        </div>
+      </div>
+      <div id="search-bar">
+        <i class="fa fa-search"></i> <input id="input" type="text" placeholder="Search for products, brands and more ">
+      </div>
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <div id="profile-info">
+        <div class="main-list"><b>Profile</b>
+          <ul>
+            <ol>
+              <li>Welcome</li>
+              <li>To access account and manage orders</li>
+            </ol><br><br><br><br>
+            <div class="checked-user">
+              <button class="btn btn-profile">
+                <span> <a id="sign-user" href="signin.html">LOGIN </a></span>
+              </button><br><br>
+              <button class="btn btn-profile">
+                <span> <a class="admin-section">Go to admin </a> </span>
+              </button><br>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="wishlist">
+      <i class="fa-solid fa-heart"></i>
+      <b id="wishlist-container">Wishlist</b>
+    </div>
+    <div class="bag-section">
+      <i class="fa-solid fa-bag-shopping" id="bag-icon"></i>
+      <h5>
+        <a id="bag-info">Bag</a>
+      </h5>
+    </div>
+  </div>
+  <div class="outer-wrapper">
+    <button class="btn" id="admin-modal">Add a new product</button>
+    <div class="modal" id="new-modal">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="col-md-5">
+                <div class="form-area">
+                  <form id="register" class="form-validation">
+                    <label>TITLE </label>
+                    <input type="text" id="title" class="form-control" name="title"> <br>
+                    <label>Description</label>
+                    <input type="text" id="description" class="form-control" name="description"> <br>
+                    <label>PRICE</b> </label>
+                    <input type="number" id="price" class="form-control" name="price"> <br>
+                    <label>IMAGE</b> </label>
+                    <input type="text" id="categoryImg" class="form-control" name="categoryImg">
+                    <label>CATEGORY</b> </label>
+                    <select id='dropdown-list' name='item'>
+                      <option value="">Choose an option</option>
+                    </select>
+                    <button class="btn btn-primary col-md-4 offset-md-4" type="submit" id="submit-form">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- update modal-->
+    <div class="my-modal">
+      <div class="modal" id="update-modal" data-type="new-update">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="col-md-5">
+                  <div class="form-area">
+                    <form id="edit-items">
+                      <label>TITLE </label>
+                      <input type="text" id="edit-title" class="form-control"> <br>
+                      <label>Description</label></span>
+                      <input type="text" id="edit-description" class="form-control"> <br>
+                      <label>PRICE</b> </label></span>
+                      <input type="number" id="edit-price" class="form-control"> <br>
+                      <label>IMAGE</b> </label>
+                      <input type="text" id="edit-img" class="form-control">
+                      <label class="category-wrap">CATEGORY: </b></label>
+                      <select id="category-dropdown" name="category-dropdown"></select>
+                      <button class="btn btn-primary col-md-4 offset-md-4 mt-3" type="submit"
+                        id="update-form">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-modal">
+      <div class="modal" id="list-modal" data-type="new-success">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-body" id="modal-section"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- delete modal-->
+    <div class="my-modal">
+      <div class="modal" id="delete-modal">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close">&times;</button>
+            </div>
+            <div class="modal-body">
+              <h4>Do you want to delete the product</h4>
+              <button type="button" id="confirm-btn" class="btn btn-info">yes</button>
+              <button type="button" id="denied-btn" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--confirmation modal-->
+    <div class="my-modal">
+      <div class="modal" id="confirm-modal" data-type="new-confirm">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-body" id="modal-section">
+              <p>Item has been deleted successfully</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tbl-update">
+      <table>
+        <thead class="product-data"></thead>
+        <tbody class="product-wrap">
+          <tr class="d-none loader-row">
+            <td colspan="3">
+              <i class="fa fa-spin fa-sync-alt fa-2x"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="main-items">
+    <div class="sign-content">
+      <div class="maintain"></div>
+    </div>
+  </div>
+  <script src="script1.js"></script>
+</body>
+
+</html>

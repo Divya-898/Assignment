@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="nav-title">
+    <div id="menu-list">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Myntra_Logo.png" alt="myntralogo" id="img">
+      <div class="main-menu">
+        <div class="nav-wrapper">
+          <div class="product-items"></div>
+        </div>
+      </div>
+      <div id="search-bar">
+        <i class="fa fa-search"></i> <input id="input" type="text" placeholder="Search for products, brands and more ">
+      </div>
+      <i class="fa fa-user icon" aria-hidden="true"></i>
+      <div id="profile-info">
+        <div class="main-list"><b>Profile</b>
+          <ul>
+            <ol>
+              <li>Welcome</li>
+              <li>To access account and manage orders</li>
+            </ol><br><br><br><br>
+            <div class="checked-user">
+              <button class="btn btn-profile">
+                <span> <a id="sign-user" href="signin.html">LOGIN</span></a>
+              </button><br><br>
+              <button class="btn btn-profile">
+                <span> <a class="admin-section">Go to admin</span></a>
+              </button><br>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="wishlist">
+      <i class="fa-solid fa-heart"></i>
+      <b id="wishlist-container">Wishlist</b>
+    </div>
+    <div class="bag-section">
+      <i class="fa-solid fa-bag-shopping" id="bag-icon"></i>
+      <h5>
+        <a id="bag-info">Bag</a>
+      </h5>
+    </div>
+  </div>
+  <div id="main-box">
+    <div id="main-container">
+      <div id="brand-logo">
+        <img class="shipping"
+          src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/6/9/ab7ff44f-8d4d-4fe4-a747-611212c6ce911654797498491-Frame-83.jpg"
+          alt="">
+      </div>
+      <div id="signin-content">
+        <div id="login-parent">
+          <h3 class="input-wrapper">Sign-In</h3>
+          <form action="" id="signin-form" class="form-validation">
+            <label for=""><b class="input-wrapper">Username</b> </label> <br> <input type="text" id="username"
+              name="username"> <br>
+            <label for=""><b class="input-wrapper">Password</b></label> <br> <input type="password" id="pass"
+              name="pass"> <br>
+            <p class="error-message" style="color:red"></p>
+            <input type="button" value="Login" id="btn-submit" class="btn btn-danger" />
+            <div>
+              <span>By continuing , I agree to the</span>
+              <span id="profile-service">Terms of Use & Privacy Policy</span>
+            </div>
+            <br>
+            <button class="account-details">Create
+              your Myntra Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-items">
+    <div class="sign-content">
+      <div class="maintain"></div>
+    </div>
+  </div>
+</body>
+<script src="script1.js"></script>
+
+</html>
