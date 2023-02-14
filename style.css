@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin-top: 80px;
+  }
+  
+  th {
+    font-weight: 700;
+    height: 30px;
+    text-align: center;
+    }
+  
+  td {
+    height: 100px;
+  }
+  
+  .today {
+    background-color: gray;
+  }
+  
+  th:nth-of-type(7),
+  td:nth-of-type(7) {
+    font-weight: bold;
+  }
+  
+  th:nth-of-type(1),
+  td:nth-of-type(1) {
+    font-weight: bold;
+  }
+  
