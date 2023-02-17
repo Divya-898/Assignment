@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  background: #e3f2fd;
+}
+
+nav {
+  align-items: center;
+  background: #f2efef;
+  box-shadow: 0 0px 1px 0 rgb(0, 0, 0, 0.1);
+  display: flex;
+  height: 70px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav .logo {
+  align-items: center;
+  display: flex;
+  margin: 0 24px;
+}
+
+.logo .menu-icon {
+  color: #333;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 14px;
+}
+
+.logo i{
+  color: #333;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+nav .sidebar {
+  background-color: #f2efef;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 260px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sidebar .sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+
+.sidebar-content img {
+  height: 100px;
+  width: 100px;
+}
+
+.bottom-cotent ul li a {
+  border-bottom: none;
+  color: #707070;
+  margin-left: -0px;
+}
+
+.sidebar-content a {
+  margin-left: 40px;
+}
+
+.sidebar-content li {
+  list-style: none;
+}
+
+li .nav-link {
+  align-items: center;
+  display: flex;
+  margin: 8px 0;
+  padding: 14px 12px;
+  text-decoration: none;
+}
+
+li .nav-link:hover {
+  background-color: #4070f4;
+}
+
+.bottom-cotent a:hover { 
+  border-bottom:none;
+  color: #007bff;
+  text-decoration: none; 
+}
+
+li:hover i,li:hover span{
+  color: white
+}
+.bottom-cotent li:hover i,
+.bottom-cotent li:hover span {
+  color: #007bff;
+}
+.nav-link i {
+  color: #707070;
+  font-size: 20px;
+  margin-right: 14px;
+}
+
+.nav-link span {
+  color: #707070;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+li .nav-link:hover .icon,
+li .nav-link:hover .link {
+  color: #fff;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+  height: 1000vh;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition: all 0.4s ease;
+  width: 200%;
+}
+
+nav.open~.overlay {
+  left: 260px;
+  pointer-events: auto;
+}
+
+a {
+  border-bottom: 2px solid #1a91db;
+  color: #333;
+  transition: all 300ms ease-out;
+  text-decoration: none;
+}
+
+.breeds-side {
+  position: absolute;
+  padding-left: 4rem;
+  right: 0;
+  width: 75%;
+}
+
+.breeds-side h3 {
+  font-size: 24px;
+  margin: 2rem 0;
+  padding-top: 4rem;
+  text-transform: uppercase;
+}
+
+.main-wrapper.breeds {
+  background-color: #eee;
+  display: flex;
+  height: auto;
+  max-width: 700px;
+}
+
+.sidebar-content li h3 {
+  margin-left: 40px;
+}
+
+.main-wrapper.breeds span {
+  font-family: mono, monospace;
+  height: auto;
+  line-height: 1.8;
+  padding: 0.5rem 1rem;
+  width: calc(100% - 80px);
+}
+
+.main-wrapper.breeds .button {
+  align-items: center;
+  background-color: #1a91db;
+  color: #fff;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  width: 100%;
+  max-width: 80px;
+  margin: 0;
+}
+
+.demo-image {
+  margin-top: 40px;
+}
+
+.google-ad {
+  margin-top: 40px;
+}

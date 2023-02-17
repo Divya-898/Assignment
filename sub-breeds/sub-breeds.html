@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sub-breeds.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font Awesome for loader -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Jquery Library  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span>CodingLab</span>
+        </div>
+        <div class="sidebar-content">
+          <ul>
+            <li>
+              <a href="/Breeds-store/contact-us/index.html"><img src="/Breeds-store/contact-us/img/images.jpeg" /></a>
+              <h3>Dog Api</h3>
+            </li>
+            <li>
+              <a href="/Breeds-store/home-store/document.html" class="nav-link">
+                <i class="bx bx-home-alt"></i>
+                <span>Documentation</span>
+              </a>
+            </li>
+            <li>
+              <a href="/Breeds-store/browse-list/browse-list.html" class="nav-link">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span>Breeds list</span>
+              </a>
+            </li>
+            <li>
+              <a href="/Breeds-store/about-us/about.html" class="nav-link">
+                <i class="bx bx-bell"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/jigsawpieces/dog-api-images#dog-api-images" class="nav-link">
+                <i class="bx bx-message-rounded"></i>
+                <span>Submit your dog</span>
+              </a>
+            </li>
+          </ul>
+          <div class="bottom-cotent">
+            <ul>
+              <li>
+                <a href="https://sideorders.co.uk/collections/frontpage/products/dog-ceo-issue-1">
+                  <i class="bx bx-heart"></i>
+                  <span>Dog CEO Zine</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.paypal.com/paypalme/dogapi">
+                  <i class="bx bx-folder-open"></i>
+                  <span>Buy me a dog treat</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/ElliottLandsborough/dog-ceo-api">
+                  <i class="bx bx-cog"></i>
+                  <span>View on GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/dog__CEO">
+                  <i class="bx bx-log-out"></i>
+                  <span>Follow on Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="overlay"></section>
+    <div class="breeds-side">
+      <h3>Endpoints</h3>
+      <ul class="breeds-list">
+        <li><a href="/Breeds-store/home-store/document.html">List all breeds</a></li>
+        <li><a href="/Breeds-store/randam-list/randam-list.html">Random image</a></li>
+        <li><a href="/Breeds-store/by-breeds/by-breeds.html">By breed</a></li>
+        <li><a href="/Breeds-store/sub-breeds/sub-breeds.html">By sub-breed</a></li>
+        <li><a href="/Breeds-store/browse-list/browse-list.html">Browse breed list</a></li>
+      </ul>
+      <h3 id="sub-breed">List all sub-breeds</h3>
+      <div class="endpoint hound-list" id="hound-dog">
+        <div class="random-wrapper">
+          <span class="code">https://dog.ceo/api/breed/hound/list</span>
+        </div>
+        <p>Returns an array of all the sub-breeds from a breed</p>
+        <div class="try">
+          <div class="json">
+            <h4>JSON</h4>
+            <pre></pre>
+          </div>
+        </div>
+      </div>
+      <h3 id="breed">List all sub-breed images</h3>
+      <div class="endpoint hound-list-all" id="hound-dog">
+        <div class="random-wrapper">
+          <span class="code">https://dog.ceo/api/breed/hound/afghan/images</span>
+        </div>
+        <p>Returns an array of all the images from the sub-breed</p>
+        <div class="try">
+          <div class="json">
+            <h4>JSON</h4>
+            <pre></pre>
+          </div>
+        </div>
+      </div>
+      <h3 id="all">Single random image from a sub breed collection</h3>
+      <div class="endpoint hound-random dog-collection">
+        <div class="random-wrapper">
+          <span class="code">https://dog.ceo/api/breed/hound/afghan/images/random</span>
+          <a href='javascript:void(0);' class='get-afghan-hound button'>Fetch!</a>
+        </div>
+        <div class="try">
+          <div class="json">
+            <h4>JSON</h4>
+            <pre></pre>
+          </div>
+          <div class="image">
+            <h4>Image</h4>
+            <div class="random-content img-breed">
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Multiple images from a sub-breed collection</h3>
+      <div class="endpoint hound-random-collection random-click">
+        <div class="random-wrapper">
+          <span class="code">https://dog.ceo/api/breed/hound/afghan/images/random/3</span>
+          <a href='javascript:void(0);' class='get-hound-multiple button'>Fetch!</a>
+        </div>
+        <p>Return multiple random dog images from a sub-breed, e.g. Afghan Hound</p>
+        <div class="try">
+          <div class="json">
+            <h4>JSON</h4>
+            <pre></pre>
+          </div>
+          <div class="image">
+            <h4>Image</h4>
+            <div class="random-content-multiple random-pic">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="google-ad">
+        <p>Sorry for running ads but hosting is expensive :( <br>If you're feeling generous you can <a
+            href="https://www.petsy.online/collections/dog-treats">buy us some dog treats & Chews</a></p>
+      </div>
+    </div>
+    <script src="/Breeds-store/contact-us/script.js"></script>
+  </body>
+</html>

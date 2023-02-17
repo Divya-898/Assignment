@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    background: #e3f2fd;
+}
+
+nav {
+    align-items: center;
+    background: #f2efef;
+    box-shadow: 0 0px 1px 0 rgb(0, 0, 0, 0.1);
+    display: flex;
+    height: 70px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav .logo {
+    align-items: center;
+    display: flex;
+    margin: 0 24px;
+}
+
+.logo .menu-icon {
+    color: #333;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 14px;
+}
+
+.logo span {
+    color: #333;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+nav .sidebar {
+    background-color: #f2efef;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 260px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sidebar .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 30px 16px;
+}
+
+.sidebar-content img {
+    height: 100px;
+    width: 100px;
+}
+
+.sidebar-content a {
+    margin-left: 40px;
+}
+
+.bottom-cotent ul li a {
+    border-bottom: none;
+    color: #707070;
+    margin-left: -0px;
+}
+
+.sidebar-content li h3 {
+    margin-left: 40px;
+}
+
+li .nav-link {
+    align-items: center;
+    display: flex;
+    margin: 8px 0;
+    padding: 14px 12px;
+    text-decoration: none;
+}
+
+.sidebar-content li {
+    list-style: none;
+}
+
+li .nav-link:hover {
+    background-color: #4070f4;
+}
+
+.nav-link i {
+    color: #707070;
+    font-size: 20px;
+    margin-right: 14px;
+}
+
+.nav-link span {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+li .nav-link:hover .icon,
+li .nav-link:hover .link {
+    color: #fff;
+}
+.breeds-list a{
+    color: black;
+}
+
+.wrapper-side p a , .wrapper-side ul li a{
+    color: black;;
+}
+
+.wrapper-side p a:hover,
+.wrapper-side ul li a:hover,
+.bottom-cotent a:hover { 
+    border-bottom:none;
+    color: #007bff;
+    text-decoration: none; 
+}
+
+li:hover i,li:hover span{
+    color: white
+}
+.bottom-cotent li:hover i,
+.bottom-cotent li:hover span {
+    color: #007bff;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 1000vh;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    transition: all 0.4s ease;
+    width: 200%;
+}
+
+nav.open~.overlay {
+    left: 260px;
+    pointer-events: auto;
+}
+
+.wrapper-side {
+    width: 75%;
+    position: absolute;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    right: 0;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+}
+
+.wrapper-side h3 {
+    margin: 2rem 0;
+    padding-top: 4rem;
+    text-transform: uppercase;
+}
+
+.h3,h3 {
+    font-size: 24px;
+}
+
+.h1,.h2,.h3,h1,h2,h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.wrapper-side p {
+    margin: 1rem 0 0;
+}
+
+p {
+    font-size: 24px;
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+a {
+    border-bottom: 2px solid #1a91db;
+    color: #333;
+    transition: all 300ms ease-out;
+    text-decoration: none;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+p {
+    font-size: 24px;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.wrapper-side p {
+    margin: 1rem 0 0;
+}
+
+.img-colletion {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+    margin: 20px 0;
+}
+
+.img-colletion img {
+    margin: 10px 5px 0 0;
+    width: calc(32% - 15px);
+    height: 298px;
+    width: 310px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.google-ad {
+    margin-top: 4rem;
+}
