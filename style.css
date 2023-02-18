@@ -1,0 +1,14 @@
+
+.container{
+    background-color: #121315;
+    height:100%;
+    width:100%;
+}
+
+*{
+    color:#fff;
+}
+
+#update{
+    display: none;
+}
