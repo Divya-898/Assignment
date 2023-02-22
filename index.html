@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> FaceBook</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-info">
+      <div class="logo">
+        <img src="image/Facebook-Logo.png">
+      </div>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search FaceBook">
+      </div>
+    </div>
+    <div class="middle-nav">
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-tv"></i>
+      <i class="fa-solid fa-store"></i>
+      <i class="fa-solid fa-users"></i>
+    </div>
+    <div class="nav-message">
+      <i class="fa-solid fa-list-ul"></i>
+      <i class="fa-brands fa-facebook-messenger"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-moon"></i>
+      <div class="main-list">
+        <img src="image/profile.png">
+        <ul>
+          <li> welcome to login page</li>
+          <a id="sign-user" href="login.html "><button class="btn btn-primary mt-3">Login</button></a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-------------Profile page-->
+  <div class="profile-container">
+    <img src="images/images/cover.png" class="cover-img">
+    <div class="edit-cover">
+      <button type="button" class="btn"><i class="fa-solid fa-camera cover"></i></i>Edit cover photo</button>
+    </div>
+    <div class="profile-details">
+      <div class="user-details">
+        <div class="user-profile">
+          <img src="images/images/profile.png" class="user-img" height="200px">
+          <div class="profile-img">
+            <i class="fa-solid fa-camera profile-camera"></i>
+          </div>
+          <div class="profile-name">
+            <h3>William Jackson</h3>
+            <p>230 Friends</p>
+            <img src="images/images/member-1.png" class="user-img">
+            <img src="images/images/member-2.png" class="user-img">
+            <img src="images/images/member-3.png" class="user-img">
+            <img src="images/images/member-4.png" class="user-img">
+            <img src="images/images/member-5.png" class="user-img">
+            <img src="images/images/member-6.png" class="user-img">
+            <img src="images/images/member-7.png" class="user-img">
+            <img src="images/images/member-8.png" class="user-img">
+            <img src="images/images/member-9.png" class="user-img">
+          </div>
+        </div>
+      </div>
+      <div class="user-story">
+        <button type="button" class="btn btn-primary Add-story" id="add-story" data-toggle="modal"
+          data-target="#myModal"><img src="images/images/upload.png" height="30px" width="30px">Add
+          to story</button>
+        <button type="button" class="btn second"><i class="fa-sharp fa-solid fa-pen"></i>Edit Profile</button>
+      </div>
+    </div>
+    <hr class="draw-line">
+    <nav class="navbar navbar-expand  manage-nav">
+      <div class="container">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a>Post</a></li>
+          <li class="nav-item ms-4"><a>About</a></li>
+          <li class="nav-item ms-4"><a>Friends</a></li>
+          <li class="nav-item ms-4"><a>Photos</a></li>
+          <li class="nav-item ms-4"><a>Videos</a></li>
+          <li class="nav-item ms-4"><a>Check-ins</a></li>
+          <li class="nav-item ms-4"><a>More</a><i class="fa-solid fa-caret-down fa-down"></i></li>
+      </div>
+      <div class="contain-more">
+        <a href=""><img src="images/images/more_icon.png" height="15px" width="15px" class="more-img"></a>
+      </div>
+    </nav>
+    <div class="profile-info">
+      <div class="info-col">
+        <div class="profile-intro">
+          <h3>Intro</h3>
+          <input type="text" placeholder="Add bio">
+          <p class="intro-text"><i class="fa-solid fa-graduation-cap education"></i>Studied at DAVV</p>
+          <p class="intro-text"><i class="fa-solid fa-house-chimney education"></i>Lives in Indore, India</p>
+          <p class="intro-text"><i class="fa-solid fa-location-pin education"></i>From Banglore, India</p>
+          <p class="intro-text"><i class="fa-solid fa-heart education"></i>Single</p>
+          <p class="intro-text"><i class="fa-solid fa-clock education"></i>Joined April 2014</p>
+          <span><a href="#details"><input type="text" placeholder="Edit details"></a><br><br></span>
+          <input type="text" placeholder="Add hobbies" data-toggle="modal" data-target="#add-hobby"><br><br>
+          <input type="text" placeholder="Add featured" data-toggle="modal" data-target="#add-feature"><br>
+        </div>
+      </div>
+      <div class="post-col">
+        <div class="my-post">
+          <div class="post-top">
+            <img src="images/images/profile.png">
+            <input type="text" placeholder="What's on you mind?">
+          </div>
+          <hr>
+          <div class="post-bottom">
+            <div class="post-icon">
+              <i class="fa-solid fa-video red"></i>
+              <p>Live video</p>
+            </div>
+            <div class="post-icon">
+              <i class="fa-sharp fa-solid fa-images green"></i>
+              <p>Photo/video</p>
+            </div>
+            <div class="post-icon">
+              <i class="fa-solid fa-flag blue"></i>
+              <p>Life event</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="post-manage">
+      <div class="filter-post">
+        <div class="filter-top">
+          <h3>Posts</h3>
+          <div class="post-maintain">
+            <div class="post-left">
+              <button type="button" class="btn"><i class="fa fa-filter" aria-hidden="true"></i>Filters</button>
+              <button type="button" class="btn second"><i class="fa-solid fa-gear"></i>Manage posts</button>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="filter-bottom">
+          <div class="filter-icon">
+            <i class="fa-solid fa-list filter"></i>
+            <p>List view</p>
+          </div>
+          <div class="filter-icon">
+            <i class="fa fa-th grid" aria-hidden="true"></i>
+            <p>Grid view</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------post page-->
+    <div class="friends-post">
+      <div class="friend-post-top">
+        <div class="img-and-name">
+          <img src="image/post_1.jpg">
+          <div class="friends-name">
+            <p class="friends-name">Senuda De Silva</p>
+            <p class="time">16h.<i class="fa-solid fa-user-group"></i></p>
+          </div>
+        </div>
+        <div class="menu">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+      <img src="image/post_1.jpg">
+      <div class="info">
+        <div class="emoji-img">
+          <img src="image/like.png">
+          <img src="image/haha.png">
+          <img src="image/heart.png">
+          <p>You, Charith Disanayaka and 25K others</p>
+        </div>
+        <div class="comment">
+          <p>421 Comments</p>
+          <p>1.3K Shares</p>
+        </div>
+      </div>
+      <hr>
+      <div class="like">
+        <div class="like-icon">
+          <i class="fa-solid fa-thumbs-up activi" data-id="fa-thumbs-up"></i>
+          <p>Like</p>
+        </div>
+        <div class="like-icon">
+          <i class="fa-solid fa-message"></i>
+          <p>Comments</p>
+        </div>
+        <div class="like-icon">
+          <i class="fa-solid fa-share"></i>
+          <p>Share</p>
+        </div>
+      </div>
+      <hr>
+      <div class="comment-warpper">
+        <img src="image/profile.png">
+        <div class="circle"></div>
+        <div class="comment-search">
+          <input type="text" placeholder="Write a comment">
+          <i class="fa-regular fa-face-smile"></i>
+          <i class="fa-solid fa-camera"></i>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="friends-post mt-3">
+      <div class="friend-post-top">
+        <div class="img-and-name">
+          <img src="image/profile_9.png">
+          <div class="friends-name">
+            <p class="friends-name">
+              Lucas De Silva
+            </p>
+            <p class="time">16h.<i class="fa-solid fa-user-group"></i></p>
+          </div>
+        </div>
+        <div class="menu">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+      <img src="image/post_2.jpg">
+      <div class="info">
+        <div class="emoji-img">
+          <img src="image/like.png">
+          <img src="image/haha.png">
+          <img src="image/heart.png">
+          <p>You, Smith Reena and 15K others</p>
+        </div>
+        <div class="comment">
+          <p>300 Comments</p>
+          <p>2.2K Shares</p>
+        </div>
+      </div>
+      <hr>
+      <div class="like">
+        <div class="like-icon">
+          <i class="fa-solid fa-thumbs-up activi" data-id="fa-thumbs-up"></i>
+          <p>Like</p>
+        </div>
+        <div class="like-icon">
+          <i class="fa-solid fa-message"></i>
+          <p>Comments</p>
+        </div>
+        <div class="like-icon">
+          <i class="fa-solid fa-share"></i>
+          <p>Share</p>
+        </div>
+      </div>
+      <hr>
+      <div class="comment-warpper">
+        <img src="image/profile.png">
+        <div class="circle"></div>
+        <div class="comment-search">
+          <input type="text" placeholder="Write a comment">
+          <i class="fa-regular fa-face-smile"></i>
+          <i class="fa-solid fa-camera"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-photo">
+      <div class="title-box">
+        <h3>Photos</h3>
+        <a href="">See all photos</a>
+      </div>
+      <div class="photo-box" data-toggle="modal" data-target="#myModal">
+        <div><img src="images/images/photo1.png" data-id="img"></div>
+        <div><img src="images/images/photo2.png"></div>
+        <div><img src="images/images/photo3.png"></div>
+        <div><img src="images/images/photo4.png"></div>
+        <div><img src="images/images/photo5.png"></div>
+        <div><img src="images/images/photo6.png"></div>
+        <div><img src="images/images/member-1.png" ></div>
+        <div><img src="images/images/member-8.png" ></div>
+        <div><img src="image/story_5.jpg" height="111px"></div>
+      </div>
+    </div>
+
+    <div class="info-friends mt-3">
+      <div class="title-box">
+        <h3>Friends</h3>
+        <a href="">See all friends</a>
+      </div>
+      <p>230 friends</p>
+      <div class="friend-box">
+        <div><img src="images/images/member-1.png">
+          <p>Reena Sharma</p>
+        </div>
+        <div><img src="images/images/member-2.png">
+          <p> John Dilaik</p>
+        </div>
+        <div><img src="images/images/member-3.png">
+          <p>Disanayaka Jain</p>
+        </div>
+        <div><img src="images/images/member-4.png">
+          <p> Suyog Aryan</p>
+        </div>
+        <div><img src="images/images/member-5.png">
+          <p> kabeer singh</p>
+        </div>
+        <div> <img src="images/images/member-6.png">
+          <p>Himani Kapoor</p>
+        </div>
+        <div> <img src="images/images/member-7.png">
+          <p> Smith Khan</p>
+        </div>
+        <div> <img src="images/images/member-8.png">
+          <p> Pooja Jain</p>
+        </div>
+        <div><img src="images/images/member-9.png">
+          <p> Sanam Shukla</p>
+        </div>
+      </div>
+    </div>
+    <div class="info-friends mt-3" id="details">
+      <div class="title-box">
+        <h3>Edit details</h3>
+        <a href="">See all details</a>
+      </div>
+      <hr class="draw-line">
+      <div>
+        <h5>Customize your intro</h5>
+        <p>Details you select will be public.</p>
+        <h5>Work</h5>
+        <span><img src="images/images/upload.png" height="30px" width="30px">Add
+          a workspace</span>
+        <h5 class="mt-4">Education</h5>
+        <div class="education-section mt-3">
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          <span class="details-section">Studied at DAVV</span>
+        </div>
+        <div class="education-section mt-3">
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          <span class="details-section">Soc IPS Academy Indore</span><br><br>
+          <span><img src="images/images/upload.png" height="30px" width="30px">Add high school</span><br><br>
+          <span><img src="images/images/upload.png" height="30px" width="30px">Add college</span>
+          <h5 class="mt-4">Current city</h5>
+          <div class="education-section mt-3">
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+            <span class="details-section">Lives in Indore, India</span>
+          </div>
+          <hr class="draw-line">
+        </div>
+        <div>
+          <span class="me-5">Update your information</span>
+          <span><button class="btn btn-primary">save</button>
+            <button class="btn exit-btn">cancel</button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="btn-modal">
+              <button type="button" class="btn btn-primary confirm-btn" data-toggle="modal"
+                data-target="#confirmModal">Add</button>
+              <button type="button" class="btn btn-primary" class="close" data-dismiss="modal">Dinay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="confirmModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <h1>Your Story</h1>
+              <div class="story-setting">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+            </div>
+            <div class="story-img">
+              <img src="image/profile.png">
+              <h3>William Jackson</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="add-hobby" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <img src="images/addhobby.png" width="100%" height="188px">
+              <div class="popular-hobby">
+               <h3>Add hobbies</h3>
+               <p>What do you love to do? Choose from the popular hobbies below or add others.</p>
+            </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <h5>RECOMMENDED HOBBIES</h5>
+            <div class="hobby-section">
+              <div class="read-data">
+                <span><i class="fa-solid fa-book"></i>Reading</span>
+              </div>
+              <div class="read-data">
+                <i class="fa-sharp fa-solid fa-microphone-stand"></i>
+                <span><i class="fa-solid fa-earth-americas"></i>Traveling</span>
+              </div>
+              <div class="read-data">
+                <span><i class="fa-solid fa-car"></i>Driving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="add-feature" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3>Edit featured </h3>
+          </div>
+          <div class="modal-body">
+            <img src="images/feature.png" width="100%" height="188px">
+             <div class="edit-feature">
+              <p>Add new</p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-info">
+          <div class="logo">
+            <img src="image/Facebook-Logo.png">
+          </div>
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search FaceBook">
+          </div>
+        </div>
+        <div class="middle-nav">
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-tv"></i>
+          <i class="fa-solid fa-store"></i>
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div class="nav-message">
+          <i class="fa-solid fa-list-ul"></i>
+          <i class="fa-brands fa-facebook-messenger"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-solid fa-moon"></i>
+          <div class="main-list">
+          <img src="image/profile.png">
+          <ul><li> welcome to login page</li>
+            <a id="sign-user"  href="login.html " ><button class="btn btn-primary mt-3" >Login</button></a>
+          </ul>
+        </div>
+        </div>
+      </nav>
+      <div class="login-section">
+        <img src="images/Fb.png" height="90px" width="100%">
+         <h3>Log in to Facebook</h3>
+         <div class="container">
+            <div class="col-md-4 mt-5">
+              <div class="form-area">
+                <form id="register" class="form-validation">
+                  <label>Username </label>
+                  <input type="text"  class="form-control" name="username" id="username"> <br>
+                  <label>Password</label>
+                  <input type="text"  class="form-control" name="password" id="pass"> <br>
+                  <span id="name-error" class="ms-4"></span>
+                  <button class="btn btn-primary col-md-4 offset-md-4" type="submit" id="submit-form">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      <script src="script.js">
+      </script>
+</body>
+</html>
