@@ -1,4 +1,24 @@
+[{
+    "username": "Sanam Shukla", 
+    "password" : "Sanam@123"
+},
 {
-    "username": "Divya", 
-    "password" : "Divya@123"
+    "username": "John Dilaik", 
+    "password" : "John@123"
+},
+
+{
+    "username": "Disanayak Jain", 
+    "password" : "Disha@123"
+},
+{
+    "username": "Suyog Aryan", 
+    "password" : "Suyog@123"
+},
+{
+    "username": "Smith Khan", 
+    "password" : "Smith@123"
 }
+]
+
+

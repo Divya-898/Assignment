@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -50,13 +51,16 @@
   <!-------------Profile page-->
   <div class="profile-container">
     <img src="images/images/cover.png" class="cover-img">
+   
     <div class="edit-cover">
       <button type="button" class="btn"><i class="fa-solid fa-camera cover"></i></i>Edit cover photo</button>
     </div>
     <div class="profile-details">
       <div class="user-details">
+        <div class="profile-shadow"></div>
         <div class="user-profile">
           <img src="images/images/profile.png" class="user-img" height="200px">
+          
           <div class="profile-img">
             <i class="fa-solid fa-camera profile-camera"></i>
           </div>
@@ -185,21 +189,21 @@
         </div>
         <div class="comment">
           <p>421 Comments</p>
-          <p>1.3K Shares</p>
+          <p class="share-info">7.3</p> <p>k shares</p>
         </div>
       </div>
       <hr>
       <div class="like">
         <div class="like-icon">
-          <i class="fa-solid fa-thumbs-up activi" data-id="fa-thumbs-up"></i>
+          <i class="fa-solid fa-thumbs-up activi" id="fa-thumbs-up"></i>
           <p>Like</p>
         </div>
         <div class="like-icon">
           <i class="fa-solid fa-message"></i>
           <p>Comments</p>
         </div>
-        <div class="like-icon">
-          <i class="fa-solid fa-share"></i>
+        <div class="like-icon shared">
+          <i class="fa-solid fa-share " id="share-img"></i>
           <p>Share</p>
         </div>
       </div>
@@ -238,15 +242,15 @@
           <img src="image/heart.png">
           <p>You, Smith Reena and 15K others</p>
         </div>
-        <div class="comment">
+        <div class="comment second-shared">
           <p>300 Comments</p>
-          <p>2.2K Shares</p>
+          <p class="share-img">9.3</p> <p>k shares</p>
         </div>
       </div>
       <hr>
       <div class="like">
         <div class="like-icon">
-          <i class="fa-solid fa-thumbs-up activi" data-id="fa-thumbs-up"></i>
+          <i class="fa-solid fa-thumbs-up activi" id="fa-thumbs-up"></i>
           <p>Like</p>
         </div>
         <div class="like-icon">
@@ -254,7 +258,7 @@
           <p>Comments</p>
         </div>
         <div class="like-icon">
-          <i class="fa-solid fa-share"></i>
+          <i class="fa-solid fa-share" id="fa-share"></i>
           <p>Share</p>
         </div>
       </div>
@@ -269,22 +273,21 @@
         </div>
       </div>
     </div>
-
     <div class="info-photo">
       <div class="title-box">
         <h3>Photos</h3>
         <a href="">See all photos</a>
       </div>
-      <div class="photo-box" data-toggle="modal" data-target="#myModal">
-        <div><img src="images/images/photo1.png" data-id="img"></div>
-        <div><img src="images/images/photo2.png"></div>
-        <div><img src="images/images/photo3.png"></div>
-        <div><img src="images/images/photo4.png"></div>
-        <div><img src="images/images/photo5.png"></div>
-        <div><img src="images/images/photo6.png"></div>
-        <div><img src="images/images/member-1.png" ></div>
-        <div><img src="images/images/member-8.png" ></div>
-        <div><img src="image/story_5.jpg" height="111px"></div>
+      <div class="photo-box">
+        <div><a class="test-popup-link" href="images/images/photo1.png" ><img src="images/images/photo1.png"></a></div>
+        <div><a class="test-popup-link" href="images/images/photo2.png" ><img src="images/images/photo2.png"></a></div>
+        <div><a class="test-popup-link" href="images/images/photo3.png" ><img src="images/images/photo3.png"></a></div>
+        <div><a class="test-popup-link" href="images/images/photo4.png" ><img src="images/images/photo4.png"></a></div>
+        <div><a class="test-popup-link" href="images/images/photo5.png" ><img src="images/images/photo5.png"></a></div>
+        <div><a class="test-popup-link" href="images/images/photo6.png" ><img src="images/images/photo6.png"></a></div>
+        <div><a class="test-popup-link" href="images/images/member-1.png" ><img src="images/images/member-1.png" ></a></div>
+        <div><a  class="test-popup-link" href="images/images/member-8.png" ><img src="images/images/member-8.png" ></a></div>
+        <div><a  class="test-popup-link" href="image/story_5.jpg"><img src="image/story_5.jpg"></a></div>
       </div>
     </div>
 
@@ -302,7 +305,7 @@
           <p> John Dilaik</p>
         </div>
         <div><img src="images/images/member-3.png">
-          <p>Disanayaka Jain</p>
+          <p>Disha Jain</p>
         </div>
         <div><img src="images/images/member-4.png">
           <p> Suyog Aryan</p>
@@ -382,8 +385,8 @@
           <div class="modal-body">
             <div class="btn-modal">
               <button type="button" class="btn btn-primary confirm-btn" data-toggle="modal"
-                data-target="#confirmModal">Add</button>
-              <button type="button" class="btn btn-primary" class="close" data-dismiss="modal">Dinay</button>
+                data-target="#confirmModal">Share to story</button>
+              <button type="button" class="btn btn-danger" class="close" data-dismiss="modal">Discard</button>
             </div>
           </div>
         </div>
@@ -458,6 +461,9 @@
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js">
   </script>
 </body>
